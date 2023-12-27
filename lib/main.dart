@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:deeplink_example/app_router.dart';
+import 'package:deeplink_example/app_router.gr.dart';
 import 'package:deeplink_example/my_observer.dart';
 import 'package:flutter/material.dart';
 
@@ -24,10 +25,12 @@ class MyApp extends StatelessWidget {
       routerConfig: _appRouter.config(
         navigatorObservers: () => [MyObserver()],
         deepLinkBuilder: (deepLink) {
-          if (deepLink.path.startsWith('/first')) {
-            return deepLink;
-          } else if (deepLink.path.startsWith('/second')) {
-            return deepLink;
+          if (deepLink.path.contains('/first')) {
+            // return deepLink;
+            return const DeepLink([FirstRoute()]);
+          } else if (deepLink.path.contains('/second')) {
+            // return deepLink;
+            return const DeepLink([SecondRoute()]);
           } else {
             return DeepLink.defaultPath;
           }
