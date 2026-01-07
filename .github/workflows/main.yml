@@ -1,18 +1,20 @@
-name: Test Curriculum Hashes
+name: Update Curriculum Course
 
 on:
   push:
     branches:
       - main
+
   pull_request:
     types: [closed]
     branches:
       - main
       - action-test
+
   workflow_dispatch:
 
 jobs:
-  testHashes:
+  updateCourse:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
 
@@ -25,7 +27,7 @@ jobs:
       - name: Install jq
         run: sudo apt-get update && sudo apt-get install -y jq
 
-      - name: Compute hashes and print values
+      - name: Compute hashes and update course
         run: |
           FILE="praxis/math/CURRICULUM-PRAXIS-Core-Math.json"
 
@@ -41,16 +43,24 @@ jobs:
           OLD_HASH=$(echo "$OLD_CONTENT" | jq -c . | sha256sum | awk '{print $1}')
           NEW_HASH=$(jq -c . "$FILE" | sha256sum | awk '{print $1}')
 
+          echo "Old hash: $OLD_HASH"
+          echo "New hash: $NEW_HASH"
+
+          if [ "$OLD_HASH" = "$NEW_HASH" ]; then
+            echo "No changes detected. Skipping Lambda call."
+            exit 0
+          fi
+
           # Read full course JSON
           COURSE_DATA=$(jq -c . "$FILE")
 
-          # Just print values for testing
-          echo "COURSE_DATA: $COURSE_DATA"
-          echo "OLD_HASH: $OLD_HASH"
-          echo "NEW_HASH: $NEW_HASH"
+          # Call Lambda
+          curl -X POST "${{ secrets.CREATE_COURSE_URL }}" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"course_data\": $COURSE_DATA,
+              \"old_hash_code\": \"$OLD_HASH\",
+              \"new_hash_code\": \"$NEW_HASH\"
+            }"
 
-          if [ "$OLD_HASH" = "$NEW_HASH" ]; then
-            echo "No changes detected."
-          else
-            echo "Changes detected!"
-          fi
+          echo "Lambda request sent"
