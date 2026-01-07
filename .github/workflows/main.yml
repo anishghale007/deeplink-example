@@ -1,36 +1,58 @@
-- name: Test old and new hashes
-  run: |
-    FILE="praxis/math/CURRICULUM-PRAXIS-Core-Math.json"
+name: Test Curriculum Hashes
 
-    # Check if file exists
-    if [ ! -f "$FILE" ]; then
-      echo "File $FILE does not exist."
-      exit 1
-    fi
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+      - action-test
+  workflow_dispatch:
 
-    # Get old version from previous commit (HEAD^)
-    OLD_CONTENT=$(git show HEAD^:$FILE 2>/dev/null || echo "{}")
+jobs:
+  computeHashes:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2  # fetch previous commit to compute old hash
 
-    # Compute SHA256 hash of old and new files
-    OLD_HASH=$(echo "$OLD_CONTENT" | jq -c . | sha256sum | awk '{print $1}')
-    NEW_HASH=$(jq -c . "$FILE" | sha256sum | awk '{print $1}')
+      - name: Compute old and new hash of curriculum
+        run: |
+          FILE="praxis/math/CURRICULUM-PRAXIS-Core-Math.json"
 
-    echo "Old hash: $OLD_HASH"
-    echo "New hash: $NEW_HASH"
+          if [ ! -f "$FILE" ]; then
+            echo "File $FILE does not exist."
+            exit 1
+          fi
 
-    if [ "$OLD_HASH" = "$NEW_HASH" ]; then
-      echo "No changes detected."
-    else
-      echo "Changes detected!"
-    fi
+          # Get old version from previous commit (HEAD^)
+          OLD_CONTENT=$(git show HEAD^:$FILE 2>/dev/null || echo "{}")
 
-    # Determine change_type
-    if [ "${GITHUB_EVENT_NAME:-push}" = "pull_request" ]; then
-      CHANGE_TYPE="merged"
-    elif [ "${GITHUB_EVENT_NAME:-push}" = "workflow_dispatch" ]; then
-      CHANGE_TYPE="manual"
-    else
-      CHANGE_TYPE="updated"
-    fi
+          # Compute SHA256 hash of old and new files
+          OLD_HASH=$(echo "$OLD_CONTENT" | jq -c . | sha256sum | awk '{print $1}')
+          NEW_HASH=$(jq -c . "$FILE" | sha256sum | awk '{print $1}')
 
-    echo "Change type: $CHANGE_TYPE"
+          echo "Old hash: $OLD_HASH"
+          echo "New hash: $NEW_HASH"
+
+          if [ "$OLD_HASH" = "$NEW_HASH" ]; then
+            echo "No changes detected."
+          else
+            echo "Changes detected!"
+          fi
+
+          # Determine change type
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            CHANGE_TYPE="merged"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            CHANGE_TYPE="manual"
+          else
+            CHANGE_TYPE="updated"
+          fi
+
+          echo "Change type: $CHANGE_TYPE"
