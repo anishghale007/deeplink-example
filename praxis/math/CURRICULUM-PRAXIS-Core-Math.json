@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "course": {
     "title": "PRAXIS CORE MATH (5733)",
-    "description": "A curated collection of the best open-access resources, mapped to the official ETS domains and powered by active recall. Updated again x3",
+    "description": "A curated collection of the best open-access resources, mapped to the official ETS domains and powered by active recall.",
     "image": "image/praxis-hero.jpeg",
     "test_code": "5733",
     "provider": "ETS",
@@ -143,80 +143,6 @@
             {
               "title": "Math Antics - Finding a Percent of a Number",
               "url": "https://www.youtube.com/watch?v=rR95Cbcjzus",
-              "type": "video"
-            }
-          ]
-        },
-        {
-          "id": "1.7",
-          "title": "Rates and Unit Rates",
-          "sources": [
-            {
-              "title": "Unit Rates - Solving Unit Rate Problems",
-              "url": "https://www.youtube.com/watch?v=VrsDrMsPb8g",
-              "type": "video"
-            },
-            {
-              "title": "Solving Unit Rate Word Problems",
-              "url": "https://www.youtube.com/watch?v=dcSYoFFSXQk",
-              "type": "video"
-            },
-            {
-              "title": "Constant Rate of Change",
-              "url": "https://www.youtube.com/watch?v=fxxOscnIhjs",
-              "type": "video"
-            }
-          ]
-        },
-        {
-          "id": "1.8",
-          "title": "Unit Conversions and Dimensional Analysis",
-          "sources": [
-            {
-              "title": "Unit Conversion & Dimensional Analysis",
-              "url": "https://www.youtube.com/watch?v=0W1e-dAnRrE",
-              "type": "video"
-            },
-            {
-              "title": "Unit Conversions - Examples & Practice",
-              "url": "https://www.youtube.com/live/dc5mm7mRcCM",
-              "type": "video"
-            }
-          ]
-        },
-        {
-          "id": "1.9",
-          "title": "Factors, Multiples, Primes, and Divisibility",
-          "sources": [
-            {
-              "title": "Math Antics - Factoring",
-              "url": "https://www.youtube.com/watch?v=0NvLtTwnUHs",
-              "type": "video"
-            },
-            {
-              "title": "Math Antics - Prime Factorization",
-              "url": "https://www.youtube.com/watch?v=XGbOiYhHY2c",
-              "type": "video"
-            },
-            {
-              "title": "Khan Academy - Divisibility Tests",
-              "url": "https://www.youtube.com/watch?v=Df9h5t64NlQ",
-              "type": "video"
-            }
-          ]
-        },
-        {
-          "id": "1.10",
-          "title": "Counterexamples and Mathematical Reasoning",
-          "sources": [
-            {
-              "title": "What is a Counterexample?",
-              "url": "https://www.youtube.com/watch?v=MUWUSs23UFQ",
-              "type": "video"
-            },
-            {
-              "title": "Counterexamples in Math",
-              "url": "https://www.youtube.com/watch?v=G8rN08kKLBg",
               "type": "video"
             }
           ]
