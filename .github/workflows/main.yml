@@ -1,22 +1,16 @@
 name: Update Curriculum Course
 
 on:
-  push:
-    branches:
-      - main
-
   pull_request:
     types: [closed]
     branches:
       - main
-      - action-test
-
-  workflow_dispatch:
 
 jobs:
   updateCourse:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
+    # Run only if the PR was merged into main
+    if: github.event.pull_request.merged == true
 
     steps:
       - name: Checkout code
@@ -54,7 +48,7 @@ jobs:
           # Read full course JSON
           COURSE_DATA=$(jq -c . "$FILE")
 
-          # Call Lambda
+          # Call Lambda to upsert course
           curl -X POST "${{ secrets.CREATE_COURSE_URL }}" \
             -H "Content-Type: application/json" \
             -d "{
