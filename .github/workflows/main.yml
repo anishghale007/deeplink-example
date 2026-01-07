@@ -1,1 +1,40 @@
 
+- name: Compute hashes and upsert course
+  run: |
+    FILE="praxis/math/CURRICULUM-PRAXIS-Core-Math.json"
+
+    # Check if file exists
+    if [ ! -f "$FILE" ]; then
+      echo "File $FILE does not exist."
+      exit 1
+    fi
+
+    # Get old version from previous commit (HEAD^)
+    git show HEAD^:$FILE > old.json || echo "{}" > old.json
+
+    # Compute SHA256 hash of old and new files
+    OLD_HASH=$(jq -c . old.json | sha256sum | awk '{print $1}')
+    NEW_HASH=$(jq -c . "$FILE" | sha256sum | awk '{print $1}')
+
+    echo "Old hash: $OLD_HASH"
+    echo "New hash: $NEW_HASH"
+
+    if [ "$OLD_HASH" = "$NEW_HASH" ]; then
+      echo "No changes detected. Skipping API call."
+      exit 0
+    fi
+
+    echo "Changes detected. Sending update to Atlas..."
+
+    # Read file content as JSON-escaped string
+    CONTENT=$(jq -Rs . < "$FILE")
+
+    # Determine change_type
+    if [ "${{ github.event_name }}" = "pull_request" ]; then
+      CHANGE_TYPE="merged"
+    elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+      CHANGE_TYPE="manual"
+    else
+      CHANGE_TYPE="updated"
+    fi
+
