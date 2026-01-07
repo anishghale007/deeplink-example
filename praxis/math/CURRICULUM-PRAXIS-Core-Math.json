@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "course": {
-    "title": "PRAXIS CORE MATH (5733) (Updated)",
+    "title": "PRAXIS CORE MATH (5733)",
     "description": "A curated collection of the best open-access resources, mapped to the official ETS domains and powered by active recall.",
     "image": "image/praxis-hero.jpeg",
     "test_code": "5733",
@@ -23,126 +23,6 @@
             {
               "title": "Learn the Number Sets to better understand math",
               "url": "https://www.youtube.com/watch?v=soNlNuT-Zrs",
-              "type": "video"
-            },
-            {
-              "title": "Decimal Place Value",
-              "url": "https://www.youtube.com/watch?v=KG6ILNOiMgM",
-              "type": "video"
-            },
-            {
-              "title": "Math Antics - Fractions as Numbers",
-              "url": "https://www.youtube.com/watch?v=CA9XLJpQp3c",
-              "type": "video"
-            },
-            {
-              "title": "Khan Academy - Rational Numbers on the Number Line",
-              "url": "https://www.youtube.com/watch?v=6h0Wi8Dcd0E",
-              "type": "video"
-            }
-          ]
-        },
-        {
-          "id": "1.2",
-          "title": "Integer Operations",
-          "sources": [
-            {
-              "title": "Adding & Subtracting Integers",
-              "url": "https://www.youtube.com/watch?v=_BgblvF90UE",
-              "type": "video"
-            },
-            {
-              "title": "Integer Multiplication & Division",
-              "url": "https://www.youtube.com/watch?v=K_tPbVPfHgk",
-              "type": "video"
-            },
-            {
-              "title": "Order of Operations (PEMDAS)",
-              "url": "https://www.youtube.com/watch?v=dAgfnK528RA",
-              "type": "video"
-            }
-          ]
-        },
-        {
-          "id": "1.3",
-          "title": "Decimal Operations",
-          "sources": [
-            {
-              "title": "Decimal Arithmetic - Complete Guide",
-              "url": "https://www.youtube.com/watch?v=kwh4SD1ToFc",
-              "type": "video"
-            }
-          ]
-        },
-        {
-          "id": "1.4",
-          "title": "Fractions - Concepts and Operations",
-          "sources": [
-            {
-              "title": "Everything to know about FRACTIONS in 30 minutes!",
-              "url": "https://www.youtube.com/watch?v=8XmhGjgsiVc",
-              "type": "video"
-            },
-            {
-              "title": "Math Antics - Fractions Are Division",
-              "url": "https://www.youtube.com/watch?v=3xwDryouw6o",
-              "type": "video"
-            },
-            {
-              "title": "Math Antics - Adding and Subtracting Fractions",
-              "url": "https://www.youtube.com/watch?v=5juto2ze8Lg",
-              "type": "video"
-            },
-            {
-              "title": "Math Antics - Multiplying Fractions",
-              "url": "https://www.youtube.com/watch?v=qmfXyR7Z6Lk",
-              "type": "video"
-            },
-            {
-              "title": "Math Antics - Dividing Fractions",
-              "url": "https://www.youtube.com/watch?v=4lkq3DgvmJo",
-              "type": "video"
-            }
-          ]
-        },
-        {
-          "id": "1.5",
-          "title": "Ratios and Proportions",
-          "sources": [
-            {
-              "title": "Introduction to Ratios",
-              "url": "https://www.youtube.com/watch?v=HpdMJaKaXXc",
-              "type": "video"
-            },
-            {
-              "title": "Proportions",
-              "url": "https://www.youtube.com/watch?v=USmit5zUGas",
-              "type": "video"
-            },
-            {
-              "title": "Math Antics - Ratios and Rates",
-              "url": "https://www.youtube.com/watch?v=RQ2nYUBVvqI",
-              "type": "video"
-            }
-          ]
-        },
-        {
-          "id": "1.6",
-          "title": "Percents",
-          "sources": [
-            {
-              "title": "What Are Percentages?",
-              "url": "https://www.youtube.com/watch?v=JeVSmq1Nrpw",
-              "type": "video"
-            },
-            {
-              "title": "Math Antics - What Are Percentages?",
-              "url": "https://www.youtube.com/watch?v=JeVSmq1Nrpw",
-              "type": "video"
-            },
-            {
-              "title": "Math Antics - Finding a Percent of a Number",
-              "url": "https://www.youtube.com/watch?v=rR95Cbcjzus",
               "type": "video"
             }
           ]
