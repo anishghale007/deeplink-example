@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "course": {
-    "title": "PRAXIS CORE MATH (5733) (Updated) x1",
+    "title": "Curriculum test",
     "description": "A curated collection of the best open-access resources, mapped to the official ETS domains and powered by active recall.",
     "image": "image/praxis-hero.jpeg",
     "test_code": "5733",
@@ -17,15 +17,9 @@
       "weight_percent": 36,
       "topics": [
         {
-          "id": "1.1",
-          "title": "Number Sets and Place Value",
-          "sources": [
-            {
-              "title": "Learn the Number Sets to better understand math",
-              "url": "https://www.youtube.com/watch?v=soNlNuT-Zrs",
-              "type": "video"
-            }
-          ]
+          "title": "Decimal Place Value",
+          "url": "https://www.youtube.com/watch?v=KG6ILNOiMgM",
+          "type": "video"
         }
       ]
     }
@@ -37,25 +31,35 @@
         "title": "OpenStax Prealgebra 2e",
         "url": "https://assets.openstax.org/oscms-prodcms/media/documents/Prealgebra2e-WEB.pdf",
         "description": "Comprehensive prealgebra textbook covering number operations, fractions, decimals, ratios, geometry, and introductory algebra.",
-        "relevant_sections": ["section_1", "section_3"]
+        "relevant_sections": [
+          "section_1",
+          "section_3"
+        ]
       },
       {
         "title": "OpenIntro Statistics 4th Edition",
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Openintro_statistics_4th_edition.pdf",
         "description": "Open-source statistics textbook covering data visualization, descriptive statistics, probability, and regression.",
-        "relevant_sections": ["section_2"]
+        "relevant_sections": [
+          "section_2"
+        ]
       },
       {
         "title": "MathCentre - Decimals Guide",
         "url": "https://www.mathcentre.ac.uk/resources/uploaded/mc-bus-decimals-2009-1.pdf",
         "description": "Concise guide to decimal operations and place value.",
-        "relevant_sections": ["section_1"]
+        "relevant_sections": [
+          "section_1"
+        ]
       },
       {
         "title": "OpenStax Prealgebra - Links to Literacy",
         "url": "https://assets.openstax.org/oscms-prodcms/media/documents/Prealgebra-LtLS.pdf",
         "description": "Reading comprehension strategies for mathematical text and word problems.",
-        "relevant_sections": ["section_1", "section_3"]
+        "relevant_sections": [
+          "section_1",
+          "section_3"
+        ]
       }
     ]
   }
