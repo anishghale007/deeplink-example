@@ -17,9 +17,15 @@
       "weight_percent": 36,
       "topics": [
         {
-          "title": "Decimal Place Value",
-          "url": "https://www.youtube.com/watch?v=KG6ILNOiMgM",
-          "type": "video"
+          "id": "1.1",
+          "title": "Number Sets and Place Value",
+          "sources": [
+            {
+              "title": "Decimal Place Value",
+              "url": "https://www.youtube.com/watch?v=KG6ILNOiMgM",
+              "type": "video"
+            }
+          ]
         }
       ]
     }
