@@ -17,6 +17,17 @@
       "weight_percent": 36,
       "topics": [
         {
+          "id": "1.3",
+          "title": "Decimal Operations",
+          "sources": [
+            {
+              "title": "Decimal Arithmetic - Complete Guide",
+              "url": "https://www.youtube.com/watch?v=kwh4SD1ToFc",
+              "type": "video"
+            }
+          ]
+        },
+        {
           "id": "1.1",
           "title": "Number Sets and Place Value",
           "sources": [
