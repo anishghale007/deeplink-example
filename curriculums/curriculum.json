@@ -26,22 +26,6 @@
               "type": "video"
             }
           ]
-        },
-        {
-          "id": "1.1",
-          "title": "Number Sets and Place Value",
-          "sources": [
-            {
-              "title": "Decimal Place Value",
-              "url": "https://www.youtube.com/watch?v=KG6ILNOiMgM",
-              "type": "video"
-            },
-            {
-              "title": "How to Read a Box Plot",
-              "url": "https://www.youtube.com/watch?v=oBREri10ZHk",
-              "type": "video"
-            }
-          ]
         }
       ]
     }
