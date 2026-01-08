@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "course": {
-    "title": "PRAXIS CORE MATH (5733) (Updated) x2",
+    "title": "Anish Testing",
     "description": "A curated collection of the best open-access resources, mapped to the official ETS domains and powered by active recall.",
     "image": "image/praxis-hero.jpeg",
     "test_code": "5733",
@@ -14,8 +14,97 @@
     {
       "id": "section_1",
       "title": "Number and Quantity",
-      "weight_percent": 35,
+      "weight_percent": 36,
       "topics": [
+        {
+          "id": "1.1",
+          "title": "Number Sets and Place Value",
+          "sources": [
+            {
+              "title": "Learn Number Sets to better understand math",
+              "url": "https://www.youtube.com/watch?v=soNlNuT-Zrs",
+              "type": "video"
+            },
+            {
+              "title": "Decimal Place Value",
+              "url": "https://www.youtube.com/watch?v=KG6ILNOiMgM",
+              "type": "video"
+            },
+            {
+              "title": "Math Antics - Fractions as Numbers",
+              "url": "https://www.youtube.com/watch?v=CA9XLJpQp3c",
+              "type": "video"
+            },
+            {
+              "title": "Khan Academy - Rational Numbers on the Number Line",
+              "url": "https://www.youtube.com/watch?v=6h0Wi8Dcd0E",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "Integer Operations",
+          "sources": [
+            {
+              "title": "Adding & Subtracting Integers",
+              "url": "https://www.youtube.com/watch?v=_BgblvF90UE",
+              "type": "video"
+            },
+            {
+              "title": "Integer Multiplication & Division",
+              "url": "https://www.youtube.com/watch?v=K_tPbVPfHgk",
+              "type": "video"
+            },
+            {
+              "title": "Order of Operations (PEMDAS)",
+              "url": "https://www.youtube.com/watch?v=dAgfnK528RA",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "title": "Decimal Operations",
+          "sources": [
+            {
+              "title": "Decimal Arithmetic - Complete Guide",
+              "url": "https://www.youtube.com/watch?v=kwh4SD1ToFc",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "1.4",
+          "title": "Fractions - Concepts and Operations",
+          "sources": [
+            {
+              "title": "Everything to know about FRACTIONS in 30 minutes!",
+              "url": "https://www.youtube.com/watch?v=8XmhGjgsiVc",
+              "type": "video"
+            },
+            {
+              "title": "Math Antics - Fractions Are Division",
+              "url": "https://www.youtube.com/watch?v=3xwDryouw6o",
+              "type": "video"
+            },
+            {
+              "title": "Math Antics - Adding and Subtracting Fractions",
+              "url": "https://www.youtube.com/watch?v=5juto2ze8Lg",
+              "type": "video"
+            },
+            {
+              "title": "Math Antics - Multiplying Fractions",
+              "url": "https://www.youtube.com/watch?v=qmfXyR7Z6Lk",
+              "type": "video"
+            },
+            {
+              "title": "Math Antics - Dividing Fractions",
+              "url": "https://www.youtube.com/watch?v=4lkq3DgvmJo",
+              "type": "video"
+            }
+          ]
+        },
         {
           "id": "1.5",
           "title": "Ratios and Proportions",
@@ -45,6 +134,470 @@
               "title": "What Are Percentages?",
               "url": "https://www.youtube.com/watch?v=JeVSmq1Nrpw",
               "type": "video"
+            },
+            {
+              "title": "Math Antics - What Are Percentages?",
+              "url": "https://www.youtube.com/watch?v=JeVSmq1Nrpw",
+              "type": "video"
+            },
+            {
+              "title": "Math Antics - Finding a Percent of a Number",
+              "url": "https://www.youtube.com/watch?v=rR95Cbcjzus",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "1.7",
+          "title": "Rates and Unit Rates",
+          "sources": [
+            {
+              "title": "Unit Rates - Solving Unit Rate Problems",
+              "url": "https://www.youtube.com/watch?v=VrsDrMsPb8g",
+              "type": "video"
+            },
+            {
+              "title": "Solving Unit Rate Word Problems",
+              "url": "https://www.youtube.com/watch?v=dcSYoFFSXQk",
+              "type": "video"
+            },
+            {
+              "title": "Constant Rate of Change",
+              "url": "https://www.youtube.com/watch?v=fxxOscnIhjs",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "1.8",
+          "title": "Unit Conversions and Dimensional Analysis",
+          "sources": [
+            {
+              "title": "Unit Conversion & Dimensional Analysis",
+              "url": "https://www.youtube.com/watch?v=0W1e-dAnRrE",
+              "type": "video"
+            },
+            {
+              "title": "Unit Conversions - Examples & Practice",
+              "url": "https://www.youtube.com/live/dc5mm7mRcCM",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "1.9",
+          "title": "Factors, Multiples, Primes, and Divisibility",
+          "sources": [
+            {
+              "title": "Math Antics - Factoring",
+              "url": "https://www.youtube.com/watch?v=0NvLtTwnUHs",
+              "type": "video"
+            },
+            {
+              "title": "Math Antics - Prime Factorization",
+              "url": "https://www.youtube.com/watch?v=XGbOiYhHY2c",
+              "type": "video"
+            },
+            {
+              "title": "Khan Academy - Divisibility Tests",
+              "url": "https://www.youtube.com/watch?v=Df9h5t64NlQ",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "1.10",
+          "title": "Counterexamples and Mathematical Reasoning",
+          "sources": [
+            {
+              "title": "What is a Counterexample?",
+              "url": "https://www.youtube.com/watch?v=MUWUSs23UFQ",
+              "type": "video"
+            },
+            {
+              "title": "Counterexamples in Math",
+              "url": "https://www.youtube.com/watch?v=G8rN08kKLBg",
+              "type": "video"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_2",
+      "title": "Data Interpretation, Statistics, and Probability",
+      "weight_percent": 32,
+      "topics": [
+        {
+          "id": "2.1",
+          "title": "Measures of Central Tendency (Mean, Median, Mode)",
+          "sources": [
+            {
+              "title": "Descriptive Statistics: Mean, Median, Mode",
+              "url": "https://www.youtube.com/watch?v=SplCk-t1BeA",
+              "type": "video"
+            },
+            {
+              "title": "Math Antics - Mean, Median and Mode",
+              "url": "https://www.youtube.com/watch?v=B1HEzNTGeZ4",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": "Measures of Spread (Range, Standard Deviation)",
+          "sources": [
+            {
+              "title": "Measures of Variability (Range, Standard Deviation, Variance)",
+              "url": "https://www.youtube.com/watch?v=s7WTQ0H0Acc",
+              "type": "video"
+            },
+            {
+              "title": "Statistics - Standard Deviation",
+              "url": "https://www.youtube.com/watch?v=MRqtXL2WX2M",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "2.3",
+          "title": "Data Displays and Interpretation",
+          "sources": [
+            {
+              "title": "Math Antics - Data And Graphs",
+              "url": "https://www.youtube.com/watch?v=hcgThf5mv38",
+              "type": "video"
+            },
+            {
+              "title": "How to Read a Box Plot",
+              "url": "https://www.youtube.com/watch?v=oBREri10ZHk",
+              "type": "video"
+            },
+            {
+              "title": "Reading Histograms",
+              "url": "https://www.youtube.com/watch?v=gSEYtAjuZ-Y",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "2.4",
+          "title": "Scatterplots and Linear Relationships",
+          "sources": [
+            {
+              "title": "Scatterplots and Correlation",
+              "url": "https://www.youtube.com/watch?v=O5dF6gbq38g",
+              "type": "video"
+            },
+            {
+              "title": "Scatter Plots: Basic Concepts & How to Read Them",
+              "url": "https://www.youtube.com/watch?v=kGrgYIuGJRQ",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "2.5",
+          "title": "Linear Models and Predictions",
+          "sources": [
+            {
+              "title": "Line of Best Fit (Linear Regression)",
+              "url": "https://www.youtube.com/watch?v=GAmzwIkGFgE",
+              "type": "video"
+            },
+            {
+              "title": "Making Predictions with Linear Regression",
+              "url": "https://www.youtube.com/watch?v=zPG4NjIkCjc",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "2.6",
+          "title": "Correlation vs Causation",
+          "sources": [
+            {
+              "title": "Correlation vs Causation",
+              "url": "https://www.youtube.com/watch?v=GtV-VYdNt_g",
+              "type": "video"
+            },
+            {
+              "title": "The Difference Between Correlation and Causation",
+              "url": "https://www.youtube.com/watch?v=ROpbdO-gRUo",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "2.7",
+          "title": "Sampling and Inference",
+          "sources": [
+            {
+              "title": "Sampling Methods and Bias",
+              "url": "https://www.youtube.com/watch?v=Rf-fIpB4D50",
+              "type": "video"
+            },
+            {
+              "title": "Population vs Sample",
+              "url": "https://www.youtube.com/watch?v=eIZD1BFfw8E",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "2.8",
+          "title": "Probability Fundamentals",
+          "sources": [
+            {
+              "title": "Introduction to Probability",
+              "url": "https://www.youtube.com/watch?v=uzkc-qNVoOk",
+              "type": "video"
+            },
+            {
+              "title": "Independent vs Dependent Events",
+              "url": "https://www.youtube.com/watch?v=xLK0MWRwFYc",
+              "type": "video"
+            },
+            {
+              "title": "Math Antics - Basic Probability",
+              "url": "https://www.youtube.com/watch?v=KzfWUEJjG18",
+              "type": "video"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section_3",
+      "title": "Algebra and Geometry",
+      "weight_percent": 32,
+      "topics": [
+        {
+          "id": "3.1",
+          "title": "Properties of Operations",
+          "sources": [
+            {
+              "title": "Math Antics - The Distributive Property",
+              "url": "https://www.youtube.com/watch?v=v-6MShC82ow",
+              "type": "video"
+            },
+            {
+              "title": "Commutative, Associative, and Distributive Properties",
+              "url": "https://www.youtube.com/watch?v=_3Eio-hjrGs",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "title": "Order of Operations and Procedures",
+          "sources": [
+            {
+              "title": "Order of Operations (PEMDAS)",
+              "url": "https://www.youtube.com/watch?v=dAgfnK528RA",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.3",
+          "title": "Equivalent Algebraic Expressions",
+          "sources": [
+            {
+              "title": "Simplifying Algebraic Expressions",
+              "url": "https://www.youtube.com/watch?v=aR6phzMLuKM",
+              "type": "video"
+            },
+            {
+              "title": "Combining Like Terms",
+              "url": "https://www.youtube.com/watch?v=CLWpkv6ccpA",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.4",
+          "title": "Writing Equations from Word Problems",
+          "sources": [
+            {
+              "title": "Translating Words to Algebraic Expressions",
+              "url": "https://www.youtube.com/watch?v=jOJLfQq9ktw",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.5",
+          "title": "Solving Linear Equations",
+          "sources": [
+            {
+              "title": "Algebra Basics - Solving Basic Equations",
+              "url": "https://www.youtube.com/watch?v=l3XzepN03KQ",
+              "type": "video"
+            },
+            {
+              "title": "Math Antics - Solving Two-Step Equations",
+              "url": "https://www.youtube.com/watch?v=LDIiYKYvvdA",
+              "type": "video"
+            },
+            {
+              "title": "Solving Multi-Step Equations",
+              "url": "https://www.youtube.com/watch?v=XCWkBAUiBxM",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.6",
+          "title": "Linear Relationships (Slope and Graphing)",
+          "sources": [
+            {
+              "title": "Math Antics - What is Slope?",
+              "url": "https://www.youtube.com/watch?v=rpMu98yRk40",
+              "type": "video"
+            },
+            {
+              "title": "Slope-Intercept Form y = mx + b",
+              "url": "https://www.youtube.com/watch?v=qXX47hS2KLw",
+              "type": "video"
+            },
+            {
+              "title": "Graphing Linear Equations",
+              "url": "https://www.youtube.com/watch?v=YqTJ6273Iq0",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.7",
+          "title": "Venn Diagrams and Set Reasoning",
+          "sources": [
+            {
+              "title": "Venn Diagrams - Introduction",
+              "url": "https://www.youtube.com/watch?v=lnalI7eVQsQ",
+              "type": "video"
+            },
+            {
+              "title": "Solving Problems with Venn Diagrams",
+              "url": "https://www.youtube.com/watch?v=MassxXy8iko",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.8",
+          "title": "Simple Quadratic Equations",
+          "sources": [
+            {
+              "title": "Solving Equations Using Square Roots",
+              "url": "https://www.youtube.com/watch?v=clC-aoijpcg",
+              "type": "video"
+            },
+            {
+              "title": "Math Antics - Exponents and Square Roots",
+              "url": "https://www.youtube.com/watch?v=B4zejSI8zho",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.9",
+          "title": "Properties of Triangles and Quadrilaterals",
+          "sources": [
+            {
+              "title": "Classifying Triangles by Sides and Angles",
+              "url": "https://www.youtube.com/watch?v=A-X6owHsxfs",
+              "type": "video"
+            },
+            {
+              "title": "Types of Quadrilaterals and Their Properties",
+              "url": "https://www.youtube.com/watch?v=yiREqzDsMP8",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.10",
+          "title": "Angle Relationships",
+          "sources": [
+            {
+              "title": "Math Antics - Angles and Degrees",
+              "url": "https://www.youtube.com/watch?v=_n3KZR1DSEo",
+              "type": "video"
+            },
+            {
+              "title": "Complementary and Supplementary Angles",
+              "url": "https://www.youtube.com/watch?v=DGKwdHMiqCg",
+              "type": "video"
+            },
+            {
+              "title": "Parallel Lines and Transversals",
+              "url": "https://www.youtube.com/watch?v=H-E5rlpCVu4",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.11",
+          "title": "Congruence and Similarity",
+          "sources": [
+            {
+              "title": "Congruent vs Similar Triangles",
+              "url": "https://www.youtube.com/watch?v=0mKmYxuMirE",
+              "type": "video"
+            },
+            {
+              "title": "Similar Figures and Scale Factor",
+              "url": "https://www.youtube.com/watch?v=P1f3sJpIYGI",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.12",
+          "title": "Circles (Area and Circumference)",
+          "sources": [
+            {
+              "title": "Math Antics - Circles, Circumference and Area",
+              "url": "https://www.youtube.com/watch?v=O-cawByg2aA",
+              "type": "video"
+            },
+            {
+              "title": "Area and Circumference of Circles",
+              "url": "https://www.youtube.com/watch?v=YokKp3pwVFc",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.13",
+          "title": "Perimeter and Area",
+          "sources": [
+            {
+              "title": "Math Antics - Perimeter",
+              "url": "https://www.youtube.com/watch?v=AAY1bsazcgM",
+              "type": "video"
+            },
+            {
+              "title": "Math Antics - Area",
+              "url": "https://www.youtube.com/watch?v=xCdxURXMdFY",              "type": "video"
+            }
+          ]
+        },
+        {
+          "id": "3.14",
+          "title": "Volume of Rectangular Prisms",
+          "sources": [
+            {
+              "title": "Math Antics - Volume",
+              "url": "https://www.youtube.com/watch?v=qJwecTgce6c",
+              "type": "video"
+            },
+            {
+              "title": "Finding Volume of Rectangular Prisms",
+              "url": "https://www.youtube.com/watch?v=By7sVb2IhFs",
+              "type": "video"
             }
           ]
         }
@@ -58,35 +611,25 @@
         "title": "OpenStax Prealgebra 2e",
         "url": "https://assets.openstax.org/oscms-prodcms/media/documents/Prealgebra2e-WEB.pdf",
         "description": "Comprehensive prealgebra textbook covering number operations, fractions, decimals, ratios, geometry, and introductory algebra.",
-        "relevant_sections": [
-          "section_1",
-          "section_3"
-        ]
+        "relevant_sections": ["section_1", "section_3"]
       },
       {
         "title": "OpenIntro Statistics 4th Edition",
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Openintro_statistics_4th_edition.pdf",
         "description": "Open-source statistics textbook covering data visualization, descriptive statistics, probability, and regression.",
-        "relevant_sections": [
-          "section_2"
-        ]
+        "relevant_sections": ["section_2"]
       },
       {
         "title": "MathCentre - Decimals Guide",
         "url": "https://www.mathcentre.ac.uk/resources/uploaded/mc-bus-decimals-2009-1.pdf",
         "description": "Concise guide to decimal operations and place value.",
-        "relevant_sections": [
-          "section_1"
-        ]
+        "relevant_sections": ["section_1"]
       },
       {
         "title": "OpenStax Prealgebra - Links to Literacy",
         "url": "https://assets.openstax.org/oscms-prodcms/media/documents/Prealgebra-LtLS.pdf",
         "description": "Reading comprehension strategies for mathematical text and word problems.",
-        "relevant_sections": [
-          "section_1",
-          "section_3"
-        ]
+        "relevant_sections": ["section_1", "section_3"]
       }
     ]
   }
