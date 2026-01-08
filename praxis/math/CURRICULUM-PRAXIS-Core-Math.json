@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "course": {
-    "title": "PRAXIS CORE MATH (5733) (Updated) x1",
+    "title": "PRAXIS CORE MATH (5733) (Updated) x2",
     "description": "A curated collection of the best open-access resources, mapped to the official ETS domains and powered by active recall.",
     "image": "image/praxis-hero.jpeg",
     "test_code": "5733",
@@ -33,17 +33,6 @@
             {
               "title": "Math Antics - Ratios and Rates",
               "url": "https://www.youtube.com/watch?v=RQ2nYUBVvqI",
-              "type": "video"
-            }
-          ]
-        },
-        {
-          "id": "1.1",
-          "title": "Number Sets and Place Value",
-          "sources": [
-            {
-              "title": "Learn the Number Sets to better understand math",
-              "url": "https://www.youtube.com/watch?v=soNlNuT-Zrs",
               "type": "video"
             }
           ]
