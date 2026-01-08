@@ -1,0 +1,202 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Only Ever Curriculum Schema",
+    "version": "1.1",
+    "description": "Schema for test prep curricula: course > sections > topics > sources (videos only), with supplemental PDFs collected separately",
+    "type": "object",
+    "required": [
+        "schema_version",
+        "course",
+        "sections"
+    ],
+    "properties": {
+        "schema_version": {
+            "type": "string"
+        },
+        "course": {
+            "type": "object",
+            "required": [
+                "title",
+                "description"
+            ],
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "test_code": {
+                    "type": "string"
+                },
+                "provider": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "duration_minutes": {
+                    "type": "integer"
+                },
+                "total_questions": {
+                    "type": "integer"
+                }
+            }
+        },
+        "sections": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "title",
+                    "topics"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "weight_percent": {
+                        "type": "number"
+                    },
+                    "topics": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "id",
+                                "title",
+                                "sources"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "type": "string"
+                                },
+                                "sources": {
+                                    "type": "array",
+                                    "description": "Video sources only - conceptual content for spaced repetition",
+                                    "items": {
+                                        "type": "object",
+                                        "required": [
+                                            "title",
+                                            "url",
+                                            "type"
+                                        ],
+                                        "properties": {
+                                            "title": {
+                                                "type": "string"
+                                            },
+                                            "url": {
+                                                "type": "string",
+                                                "format": "uri",
+                                                "pattern": "^https://(www\\.)?youtube\\.com/(watch\\?v=|live/)"
+                                            },
+                                            "type": {
+                                                "type": "string",
+                                                "const": "video"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "supplemental_resources": {
+            "type": "object",
+            "description": "Additional resources (PDFs, textbooks) for deeper study, collected outside main curriculum",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "pdfs": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "title",
+                            "url"
+                        ],
+                        "properties": {
+                            "title": {
+                                "type": "string"
+                            },
+                            "url": {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "relevant_sections": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "description": "Array of section IDs this resource covers"
+                            },
+                            "page_range": {
+                                "type": "string",
+                                "description": "Optional specific page range, e.g. '45-120'"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "example_structure": {
+        "hierarchy": {
+            "main_curriculum": "course > sections[] > topics[] > sources[] (videos only)",
+            "supplemental": "supplemental_resources > pdfs[]"
+        },
+        "minimal_example": {
+            "schema_version": "1.1",
+            "course": {
+                "title": "Test Name",
+                "description": "Description"
+            },
+            "sections": [
+                {
+                    "id": "section_1",
+                    "title": "section Title",
+                    "weight_percent": 25,
+                    "topics": [
+                        {
+                            "id": "1.1",
+                            "title": "Topic Title",
+                            "sources": [
+                                {
+                                    "title": "Video Title",
+                                    "url": "https://www.youtube.com/watch?v=xxxxx",
+                                    "type": "video"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "supplemental_resources": {
+                "description": "Additional PDF resources for deeper study",
+                "pdfs": [
+                    {
+                        "title": "Textbook Name",
+                        "url": "https://example.com/textbook.pdf",
+                        "description": "Comprehensive coverage of section topics",
+                        "relevant_sections": [
+                            "section_1"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

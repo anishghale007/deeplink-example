@@ -26,10 +26,13 @@ jobs:
         run: |
           echo "Detecting changed JSON files..."
 
-          FILES=$(git diff --name-only HEAD^ HEAD | grep '\.json$' || true)
+          FILES=$(git diff --name-only HEAD^ HEAD \
+            | grep '\.json$' \
+            | grep -v -E '(^|/)curriculum_schema_.*\.json$' \
+            || true)
 
           if [ -z "$FILES" ]; then
-            echo "No JSON files changed."
+            echo "No JSON files changed (schema files ignored)."
             exit 0
           fi
 
